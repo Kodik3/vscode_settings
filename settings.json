@@ -1,0 +1,96 @@
+{
+	// theme
+	"workbench.colorTheme": "Atomize",
+	"workbench.iconTheme": "vscode-icons",
+
+	// cursor
+	"editor.cursorStyle": "line",
+	"editor.cursorBlinking": "solid",
+	"editor.cursorSmoothCaretAnimation": "off",
+	"terminal.integrated.cursorStyle": "line",
+	"terminal.integrated.cursorBlinking": true,
+
+	// font
+	"editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+	"editor.fontSize": 14,
+	"editor.fontLigatures": true,
+	"terminal.integrated.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+	"terminal.integrated.fontSize": 15,
+
+	// minimap
+	"editor.minimap.renderCharacters": false,
+	"editor.minimap.enabled": false,
+
+	// scroll
+	"editor.smoothScrolling": true,
+	"workbench.list.smoothScrolling": true,
+	"terminal.integrated.smoothScrolling": true,
+	// scrollbar
+	"editor.scrollbar.vertical": "hidden",
+	"editor.scrollbar.verticalScrollbarSize": 0,
+	"editor.scrollbar.horizontalScrollbarSize": 9,
+
+	"workbench.editorAssociations": {
+		"*.jar": "default"
+	},
+
+	"editor.lineHeight": 1.5,
+	"editor.rulers": [99],
+	"workbench.editor.empty.hint": "hidden",
+	"workbench.editor.pinnedTabsOnSeparateRow": true,
+	"editor.renderLineHighlight": "none",
+	"editor.tabSize": 2,
+
+	"editor.wordWrap": "on",
+	"editor.unicodeHighlight.ambiguousCharacters": false,
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"explorer.compactFolders": false,
+	"editor.glyphMargin": false,
+	"editor.linkedEditing": true,
+	"editor.padding.top": 15,
+
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact",
+		"typescript": "typescriptreact"
+	},
+
+	"editor.unicodeHighlight.invisibleCharacters": false,
+	"workbench.tree.renderIndentGuides": "none",
+	"workbench.sideBar.location": "right",
+
+	"workbench.startupEditor": "none",
+	"workbench.tips.enabled": false,
+	"editor.guides.indentation": false,
+	"editor.renderWhitespace": "none",
+	"editor.matchBrackets": "never",
+	"editor.lightbulb.enabled": "off",
+	"editor.detectIndentation": false,
+	"breadcrumbs.enabled": false,
+	"files.autoSave": "off",
+
+	// Apc Customize UI++ (Extension)
+	"window.titleBarStyle": "native",
+	"apc.activityBar": {
+		"size": 30,
+		"position": "bottom"
+	},
+	"apc.statusBar": {
+		"position": "editor-bottom",
+		"height": 20,
+		"fontSize": 10
+	},
+
+	// Prettier (Extension)
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"prettier.useTabs": true,
+	"prettier.semi": false,
+	"prettier.jsxSingleQuote": true,
+	"prettier.singleQuote": true,
+	"prettier.arrowParens": "avoid",
+	"scss.format.enable": false,
+	"git.openRepositoryInParentFolders": "never",
+	"cSpell.language": "en,ru",
+	"window.zoomLevel": 1
+}
