@@ -1,16 +1,16 @@
 {
 	// theme
-	"workbench.colorTheme": "Atomize",
-	"workbench.iconTheme": "vscode-icons",
+	"workbench.colorTheme": "Vague",
+	"workbench.iconTheme": "material-icon-theme",
 
 	// cursor
 	"editor.cursorStyle": "line",
 	"editor.cursorBlinking": "solid",
-	"editor.cursorSmoothCaretAnimation": "off",
+	"editor.cursorSmoothCaretAnimation": "on",
 	"terminal.integrated.cursorStyle": "line",
 	"terminal.integrated.cursorBlinking": true,
 
-	// font
+	// font: Fira Code | Departure Mono |
 	"editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
 	"editor.fontSize": 14,
 	"editor.fontLigatures": true,
@@ -30,6 +30,14 @@
 	"editor.scrollbar.verticalScrollbarSize": 0,
 	"editor.scrollbar.horizontalScrollbarSize": 9,
 
+	// terminal
+	"terminal.integrated.commandsToSkipShell": [
+		"editor.action.clipboardPasteAction",
+		"workbench.action.terminal.paste"
+	],
+	"terminal.integrated.copyOnSelection": true,
+	"terminal.integrated.rightClickCopyPaste": true,
+
 	"workbench.editorAssociations": {
 		"*.jar": "default"
 	},
@@ -40,6 +48,13 @@
 	"workbench.editor.pinnedTabsOnSeparateRow": true,
 	"editor.renderLineHighlight": "none",
 	"editor.tabSize": 2,
+	// "editor.guides.bracketPairs": "active",
+	"editor.lineNumbers": "on",
+	"workbench.editor.tabActionLocation": "left",
+	"workbench.tree.expandMode": "singleClick",
+	"workbench.tree.indent": 10,
+	"debug.onTaskErrors": "debugAnyway",
+	"editor.inlayHints.enabled": "off",
 
 	"editor.wordWrap": "on",
 	"editor.unicodeHighlight.ambiguousCharacters": false,
@@ -50,6 +65,13 @@
 	"editor.linkedEditing": true,
 	"editor.padding.top": 15,
 
+	"editor.quickSuggestions": {
+		"other": true,
+		"comments": false,
+		"strings": true
+	},
+	"javascript.suggestionActions.enabled": true,
+	"typescript.suggestionActions.enabled": true,
 	"emmet.includeLanguages": {
 		"javascript": "javascriptreact",
 		"typescript": "typescriptreact"
@@ -57,7 +79,19 @@
 
 	"editor.unicodeHighlight.invisibleCharacters": false,
 	"workbench.tree.renderIndentGuides": "none",
-	"workbench.sideBar.location": "right",
+
+	"files.associations": {
+		"*.tpl": "html"
+	},
+	"files.watcherExclude": {
+		"**/node_modules/**": true,
+		"**/dist/**": true,
+		"**/.git/**": true
+	},
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/dist": true
+	},
 
 	"workbench.startupEditor": "none",
 	"workbench.tips.enabled": false,
@@ -66,11 +100,6 @@
 	"editor.matchBrackets": "never",
 	"editor.lightbulb.enabled": "off",
 	"editor.detectIndentation": false,
-	"breadcrumbs.enabled": false,
-	"files.autoSave": "off",
-
-	// Apc Customize UI++ (Extension)
-	"window.titleBarStyle": "native",
 	"apc.activityBar": {
 		"size": 30,
 		"position": "bottom"
@@ -81,7 +110,7 @@
 		"fontSize": 10
 	},
 
-	// Prettier (Extension)
+	// Prettier
 	"editor.formatOnSave": true,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"prettier.useTabs": true,
@@ -90,7 +119,30 @@
 	"prettier.singleQuote": true,
 	"prettier.arrowParens": "avoid",
 	"scss.format.enable": false,
+
 	"git.openRepositoryInParentFolders": "never",
 	"cSpell.language": "en,ru",
-	"window.zoomLevel": 1
+	"workbench.sideBar.location": "right",
+	"window.zoomLevel": 1,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"editor.inlayHints.enabled": "off",
+	"window.titleBarStyle": "native",
+	"php.codeLens.enabled": false,
+	"workbench.secondarySideBar.defaultVisibility": "hidden",
+
+	// python
+	"python.useEnvironmentsExtension": true,
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.black-formatter"
+	},
+	"python.defaultInterpreterPath": "c:\\python313\\python.exe",
+	"extensions.experimental.affinity": {
+		"asvetliakov.vscode-neovim": 1
+	},
+	"codeium.enableCodeLens": false,
+	"prettier.printWidth": 99,
+	"git.suggestSmartCommit": false,
+	"chat.viewSessions.orientation": "stacked",
+	"window.customTitleBarVisibility": "never",
+	"chat.agent.enabled": false
 }
