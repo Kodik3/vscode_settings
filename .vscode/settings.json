@@ -70,8 +70,6 @@
 		"comments": false,
 		"strings": true
 	},
-	"javascript.suggestionActions.enabled": true,
-	"typescript.suggestionActions.enabled": true,
 	"emmet.includeLanguages": {
 		"javascript": "javascriptreact",
 		"typescript": "typescriptreact"
@@ -118,31 +116,44 @@
 	"prettier.jsxSingleQuote": true,
 	"prettier.singleQuote": true,
 	"prettier.arrowParens": "avoid",
+	"prettier.printWidth": 99,
 	"scss.format.enable": false,
 
-	"git.openRepositoryInParentFolders": "never",
-	"cSpell.language": "en,ru",
-	"workbench.sideBar.location": "right",
-	"window.zoomLevel": 1,
-	"javascript.updateImportsOnFileMove.enabled": "always",
-	"editor.inlayHints.enabled": "off",
-	"window.titleBarStyle": "native",
+	// python
+	"[python]": {
+		"editor.tabSize": 4,
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "charliermarsh.ruff"
+	},
+
+	// php
 	"php.codeLens.enabled": false,
+
+	// js/ts
+	"js/ts.suggestionActions.enabled": true,
+	"js/ts.updateImportsOnFileMove.enabled": "always",
+
+	// rust
+	"[rust]": {
+		"editor.tabSize": 4,
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "rust-analyzer"
+	},
+
+	"cSpell.language": "en,ru",
+	"window.zoomLevel": 1,
+	"window.titleBarStyle": "native",
+	"window.customTitleBarVisibility": "never",
+	"workbench.sideBar.location": "right",
 	"workbench.secondarySideBar.defaultVisibility": "hidden",
 
-	// python
-	"python.useEnvironmentsExtension": true,
-	"[python]": {
-		"editor.defaultFormatter": "ms-python.black-formatter"
-	},
-	"python.defaultInterpreterPath": "c:\\python313\\python.exe",
-	"extensions.experimental.affinity": {
-		"asvetliakov.vscode-neovim": 1
-	},
 	"codeium.enableCodeLens": false,
-	"prettier.printWidth": 99,
+
+	// git
+	"git.openRepositoryInParentFolders": "never",
 	"git.suggestSmartCommit": false,
+
+	// chat
 	"chat.viewSessions.orientation": "stacked",
-	"window.customTitleBarVisibility": "never",
 	"chat.agent.enabled": false
 }
